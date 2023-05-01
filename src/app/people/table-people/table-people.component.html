@@ -1,0 +1,27 @@
+<p>table-people works!</p>
+<div>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <td>Identificacion</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Telefono</td>
+        <td>Direccion</td>
+        <td>Fecha nacimiento</td>
+        <td>Correo</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listUser">
+        <td>{{item.identificacion}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.apellido}}</td>
+        <td>{{item.telefono}}</td>
+        <td>{{item.direccion}}</td>
+        <td>{{item.fechaNacimiento}}</td>
+        <td>{{item.correo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
